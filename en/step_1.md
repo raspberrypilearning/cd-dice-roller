@@ -4,13 +4,13 @@ Create a dice roll simulator using Javascript that you can use instead of real d
 
 ### What you will make
 
-Build a web app like the one in the trinket below.
+You will build a web app like the one in the trinket below.
 
 <div class="trinket">
   <iframe src="https://trinket.io/embed/html/d99b53620d?outputOnly=true&amp;start=result" width="600" height="505" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen=""></iframe>
 </div>
 
-Select the number of dice you wish to roll using the drop down `select` button. Then click 'Roll Dice'. If you want to keep some dice from your roll and roll the other ones again, click the dice you wish to keep, they will turn yellow and you can click 'Roll but Keep Selected Dice'. Click on 'Liars Dice' or 'Yahtzee' to learn more about these games!
+To use the dice simulator, select the number of dice you wish to roll using the drop down `select` button. Then click 'Roll Dice'. If you want to keep some dice from your roll and roll the other ones again, click the dice you wish to keep, they will turn yellow and you can click 'Roll but Keep Selected Dice'. Click on 'Liars Dice' or 'Yahtzee' to learn more about these games!
 
 --- collapse ---
 ---
@@ -18,12 +18,13 @@ title: What you will need
 ---
 
 ### Hardware
-
-+ List hardware here, or delete section.
++ Computer capable of running a modern web browser.
 
 ### Software
++ This project can be completed in a web browser using trinket.io
 
-+ List software here, or delete section.
+### Additional resources
++ The images used for the faces of the dice can be found [here](https://github.com/raspberrypilearning/cd-dice-roller/tree/draft/en/images)
 
 --- /collapse ---
 
@@ -34,7 +35,7 @@ title: What you will learn
 
 This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum){:target="_blank"}:
 
-+ [Add curriculum strand/level description.](https://www.raspberrypi.org/curriculum/strand/level){:target="_blank"}
++ [Use basic programming constructs to create simple programs.](https://www.raspberrypi.org/curriculum/programming/creator){:target="_blank"}
 
 --- /collapse ---
 

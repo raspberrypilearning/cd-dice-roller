@@ -8,4 +8,13 @@ ingredient: false
 last_tested: "2018-09-03"
 steps:
   - title: Introduction
-  - title: Step title
+  - title: Roll one die
+  - title: Make the die faces look authentic
+  - title: Roll two Dice
+  - title: "Challenge: roll n dice"
+    challenge: true
+  - title: Select individual dice
+  - title: Reroll the unselected dice
+  - title: "Challenge: more than 6 sides"
+    challenge: true
+

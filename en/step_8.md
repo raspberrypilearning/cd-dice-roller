@@ -1,0 +1,3 @@
+## Challenge: more than 6 sides
+
++ Step content...

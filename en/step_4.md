@@ -1,3 +1,3 @@
-## Roll one die
+## Roll two Dice
 
 + Step content...
