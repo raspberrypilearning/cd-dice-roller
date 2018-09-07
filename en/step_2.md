@@ -1,5 +1,7 @@
 ## Getting started - roll one die
 
+First let's get set up on Trinket.
+
 --- task ---
 
 Go to the [starter Trinket](https://trinket.io/html/830e255a5c){:target="_blank"}. Here, you will see a box containing an example website project. On the right-hand side is the website, and on the left-hand side is the code that makes the website. 
