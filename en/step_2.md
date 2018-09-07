@@ -46,7 +46,7 @@ Now we're ready to begin coding!
 
 --- task ---
 
-In this project, I've supplied you with most of the HTML and CSS. You will mostly be working on the JavaScript code. This can be found in the JavaScript file `myScript.js` located just above the code on your screen. Before you roll a die, you will need to get access to the HTML `div` with the id `diceMat`. This is so you have somewhere to put the result of your roll on screen. 
+In this project, I've supplied you with most of the HTML and CSS. You will mostly be working on the JavaScript code. This can be found in the JavaScript file `myScript.js` located just above the code on your screen. Before you roll a die, you will need to get access to the HTML `div` with the id `diceMat`. This is so you have somewhere to put the result of your roll on screen. Put the following line at the very top of your JavaScript code.
 
 ```javascript
     var diceMat = document.getElementById("diceMat");
@@ -72,7 +72,7 @@ There is a lot going on here, let's examine it further.
 
 [[[generic-javascript-create-a-function]]]
 
-The `return` keyword in a function sends the value to the right of the word back to the point where the function was called. In this case it is the code to get a random number between 1 and 6; i.e., the numbers on the faces of dice. `Math.random()` returns a random decimal number between 0 and 1 (inclusive of 0, but not 1). `Math.floor()` will round down the decimal number that is inside the `()`.
+The `return` keyword in a function sends the value to the right of the word back to the point where the function was called. In this case, it is the code to get a random number between 1 and 6; i.e., the numbers on the faces of dice. `Math.random()` returns a random decimal number between 0 and 1 (inclusive of 0, but not 1). `Math.floor()` will round down the decimal number that is inside the `()`.
 
 --- /task ---
 
@@ -110,8 +110,8 @@ Now we know our `dieRoll()` function works, let's get the result to appear on th
     }
 ```
 
-Here you have set the text `color` to white and the `fontSize` to 150 pixels (the little dots that make up our screens). You can change these to whatever you like to personalise your dice mat. Finally you have put the value for the die roll into the `diceMat`'s HTML so that you can see it. You can remove the alert becuse the pop up gets annoying.
+Here you have set the text `color` to white and the `fontSize` to 150 pixels (the little dots that make up our screens). You can change these to whatever you like to personalise your dice mat. Finally you have put the value for the die roll into the `diceMat`'s HTML so that you can see it. You can remove the alert becuse the pop up does get annoying after a while.
 
 --- /task ---
 
-You now have a working dice simulator. Lets see if you can make it look better next.
+You now have a working dice simulator. Click the button and you should see something like below. Lets see if you can make it look better in the next step.
