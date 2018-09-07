@@ -24,7 +24,7 @@ title: What you will need
 + This project can be completed in a web browser using trinket.io
 
 ### Additional resources
-+ The images used for the faces of the dice can be found [here](https://github.com/raspberrypilearning/cd-dice-roller/tree/draft/en/images)
++ The images used for the faces of the dice can be found [here](https://github.com/raspberrypilearning/cd-dice-roller/tree/draft/en/images){:target="_blank"}
 
 --- /collapse ---
 
@@ -39,8 +39,12 @@ This project covers elements from the following strands of the [Raspberry Pi Dig
 
 --- /collapse ---
 
+--- no-print ---
+
 ### Additional information for educators
 
 If you need to print this project, please use the [printer-friendly version](https://projects.raspberrypi.org/en/projects/project-name/print){:target="_blank"}.
 
 Use the link in the footer to access the GitHub repository for this project, which contains all resources (including an example finished project) in the 'en/resources' folder.
+
+--- /no-print ---
