@@ -28,7 +28,7 @@ You no longer need the lines that set the dice mat colour, size or HTML so you c
 
 --- task ---
 
-There is an easy fix to this little problem. You just need to reset the diceMat HTML everytime the button is clicked. If you add `diceMat.innerHTML = ""` at the stat of the function, it will set the diceMat HTML to be empty. So your code should look something like below after this step. Pressing the button should produce a nice random image of a die face.
+There is an easy fix to this little problem. You just need to reset the diceMat HTML everytime the button is clicked. If you add `diceMat.innerHTML = ""` at the start of the function, it will set the diceMat HTML to be empty. So your code should look like below after this step. Pressing the button should produce a nice random image of a die face.
 
 ```javascript
     function rollButton() {

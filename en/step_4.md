@@ -25,6 +25,10 @@ Next you need to get the number of dice they picked from the select box. Similar
     var diceNumberBox = document.getElementById("selectDice");
 ```
 
+--- /task ---
+
+--- task ---
+
 Next it's time to fill in your `getNumDice()` function. Add in this code:
 
 ```javascript
@@ -43,11 +47,34 @@ The final step to rolling two dice requires us to learn a little about `for` loo
 
 --- collapse ---
 ---
-title: Javascript `for` loops.
+title: Javascript for loops.
 ---
 
-Hello
+Loops are very useful if you need to run the same code over and over with a different value. In this step of the project you will need to use the same code for both the first and the second dice. A `for` loop looks like the following:
+
+```javascript
+    for (var i = 0; i < 10; i++) {
+        youreCodeGoesHere();
+    }
+```
+
+The first part, `var i = 0` creates a counting variable and starts it at 0. Next you must include a condition, `i < 10`  indicates that the loop will continue to repeat the code while i is less than 10. Lastly you include a statement that will execute after each time the code runs. `i++` means i will increase by 1 each time the code runs. So this code will run 10 times.
 
 --- /collapse ---
+
+Your for loop will need to run once for each die, so you will need to get the number of dice the user wants to throw. You can use your function `getNumDice()` for this! Now you can create your for loop by moving some of our previous code inside the loop's curly braces.
+
+```javascript
+    function rollButton() {
+        diceMat.innerHTML = "";
+        var numberOfDice = getNumDice(); //get the number of dice.
+        for (var i = 0; i < numberOfDice; i++){ //create our for loop
+            var rollValue = dieRoll();
+            var image = document.createElement("img");
+            image.src = ("tile" + rollValue + ".png");
+            diceMat.appendChild(image);
+        }
+    }
+```
 
 --- /task ---
