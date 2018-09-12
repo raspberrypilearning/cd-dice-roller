@@ -12,11 +12,18 @@ Hello World!
 
 --- /hint ---
 
+--- hint ---
+
+Hello World!
+
+--- /hint ---
+
+
 --- /hints ---
 
 --- /challenge ---
 
-##Dev Notes: This challenge requires very little but nothing that has been covered previuosly in the project. No chance of a Ninja being able to solve this without getting the code.
+**Dev Notes: This challenge requires very little but nothing that has been covered previuosly in the project. No chance of a Ninja being able to solve this without getting the code.**
 + `<input type="number" id="selectDice" />` this replaces `<select>` options
 
 + replace code to get select value `return numDiceSelectElem.options[numDiceSelectElem.selectedIndex].value;` with code to get from input `return diceNumberBox.value;`
