@@ -1,6 +1,6 @@
 ## Introduction
 
-Create a dice roll simulator using Javascript that you can use instead of real dice in a variety of games including monopoly, yahtzee or liars dice.
+Create a dice roll simulator using JavaScript that you can use instead of real dice in a variety of games including Monopoly, Yahtzee or Liar's dice.
 
 ### What you will make
 
@@ -18,7 +18,7 @@ title: What you will need
 ---
 
 ### Hardware
-+ Computer capable of running a modern web browser.
++ A computer capable of running a modern web browser.
 
 ### Software
 + This project can be completed in a web browser using trinket.io
@@ -35,7 +35,7 @@ title: What you will learn
 
 This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum){:target="_blank"}:
 
-+ [Use basic programming constructs to create simple programs.](https://www.raspberrypi.org/curriculum/programming/creator){:target="_blank"}
++ [Use basic programming constructs to create simple programs](https://www.raspberrypi.org/curriculum/programming/creator){:target="_blank"}
 
 --- /collapse ---
 

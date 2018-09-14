@@ -1,16 +1,16 @@
-## Getting started - roll one die
+## Roll one die
 
-First let's get set up on Trinket.
+First let's get set up on trinket.
 
 --- task ---
 
-Go to the [starter Trinket](https://trinket.io/html/830e255a5c){:target="_blank"}. Here, you will see a box containing an example website project. On the right-hand side is the website, and on the left-hand side is the code that makes the website. 
+Go to the [starter trinket here](https://trinket.io/html/830e255a5c){:target="_blank"}. You'll see a box containing an example website project. On the right-hand side is the website, and on the left-hand side is the code that makes the website. 
 
-![Web page and code in Trinket](images/starterTrinket.png)
+![Web page and code in trinket](images/starterTrinket.png)
 
 --- collapse ---
 ---
-title: I have a Trinket account
+title: I have a trinket account
 ---
 
 - Click the **Remix** button at the top right of the project. If you are not signed in, you will be prompted to do so. Once you've signed in, you'll  need to click  **Remix** again. Clicking this button creates a copy of the project for you to work with. 
@@ -25,15 +25,15 @@ It should say **remixed** after you click it:
 
 --- collapse ---
 ---
-title: I don't have a Trinket account
+title: I don't have a trinket account
 ---
 
 You can save your work by using one of the options in the **Share** menu. You will get a link that you can either save somewhere, for example in a document, or send to someone via email.
 **Note:** each time you make a change, you will get a new link.
 
-If you want to create an account on Trinket, follow the steps below. This will allow you to access your work easily from any computer, and to **remix** projects somebody else has shared with you. Remixing means you will save a copy of a project so you can make your own changes to it.
+If you want to create an account on trinket, follow the steps below. This will allow you to access your work easily from any computer, and to **remix** projects somebody else has shared with you. Remixing means you will save a copy of a project so you can make your own changes to it.
 
-- Go to [the Trinket website](http://dojo.soy/trinket) and click **Sign Up For Your Free Account**. You will need an email address to sign up. 
+- Go to [the trinket website](http://dojo.soy/trinket) and click **Sign Up For Your Free Account**. You will need an email address to sign up. 
 
 - Enter your email address and choose a password, or ask somebody to do this for you.
 
@@ -103,7 +103,7 @@ Now try and click on the button. You should get a pop up that tells you the valu
 Now we know our `dieRoll()` function works, let's get the result to appear on the dice mat. To do this lets rewrite our `rollButton()` function. Remember that we have our dice Mat stored in the variable `diceMat`!
 
 ```javascript
-    function rollAll() {
+    function rollButton() {
         // alert( "Your roll is " + dieRoll() ); You can remove this line
         var rollValue = dieRoll();
         diceMat.style.color = "White";
