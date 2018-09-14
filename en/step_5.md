@@ -1,31 +1,32 @@
---- challenge ---
+## Roll *n* dice
 
-## Challenge: roll *n* dice
+You can now play games like Monopoly because you can roll two dice. But some games require more, e.g. Risk requires 3 dice and Yahtzee requires 5 dice. Some games need even more! Let's change your app so that you can roll any amount of dice, or *n* dice as a mathematician would say!
 
-+ You can now play monopoly because you can roll two dice. But some games require more, e.g. Risk requires 3 dice and Yahtzee requires 5 dice. Some games need even more! Change your app so that you can roll any amount of dice, or *n* dice as a mathematician would say!
+--- task ---
 
---- hints ---
+First, replace your select box code in the `index.html` file with the following code that creates a `input` box that only allows numbers to be typed in. Keep the same ID though!
 
---- hint ---
+```html
+    <div id="controller">
 
-Hello World!
+      <input type="number" id="selectDice" />
 
---- /hint ---
+      <button onclick="rollButton()">Roll Dice</button>
+    </div>
+```
 
---- hint ---
+--- /task ---
 
-Hello World!
+--- task ---
 
---- /hint ---
+Next you must edit your `getNumDice()` function. You can use the following code to get the value from the input box.
 
+```javascript
+    function getNumDice() {
+        return return diceNumberBox.value;
+    }
+```
 
---- /hints ---
+--- /task ---
 
---- /challenge ---
-
-**Dev Notes: This challenge requires very little but nothing that has been covered previuosly in the project. No chance of a Ninja being able to solve this without getting the code.**
-+ `<input type="number" id="selectDice" />` this replaces `<select>` options
-
-+ replace code to get select value `return numDiceSelectElem.options[numDiceSelectElem.selectedIndex].value;` with code to get from input `return diceNumberBox.value;`
-
-+ no change to loop 
+That's all for this step! Your `for` loop condition used your `getNumDice()` function so we don't need to make any changes to your for loop.

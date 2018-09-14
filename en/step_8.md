@@ -2,7 +2,7 @@
 
 ## Challenge: more than 6 sides
 
-Some games like Dungeons and Dragons have unique dice that are not cubes. They have more/less than 6 sides. Edit your Dice Roller so the user can select the number of sides your dice will have. (Don't worry about using the dice images, just use the actual numbers like you did at the start of this project.)
+Some games like Dungeons and Dragons have unique dice that are not cubes. They have more or less than 6 sides. Edit your Dice Roller so the user can select the number of sides your dice will have. (Don't worry about using the dice images, just use the actual numbers like you did at the start of this project.)
 
 ![Dice with 4, 6, 8, 10, 12 and 20 sides](images/diceTypes.jpg)
 
@@ -37,13 +37,13 @@ Create `div` elements instead of images in your `for` loop inside your`rollButto
     }
 ```
 
-The last three lines are used to clear the float property that I introduced in my CSS class `.textDice`. If you are not using it you might not these.
+The last three lines are used to clear the float property that I introduced in my CSS class `.textDice`. If you are not using it, you might not these!
 
 --- /hint ---
 
 --- hint ---
 
-Finally introduce another way to collect input from the user for the how many sides they would like their dice to have. You could use a select box or another input with the property `type="number"`.
+Finally, introduce another way to collect input from the user to query how many sides they would like their dice to have. You could use a select box or another input with the property `type="number"`.
 
 ```html
 <div id="controller">
@@ -58,7 +58,7 @@ Finally introduce another way to collect input from the user for the how many si
     //This gets your new input box
     var diceSidesBox = document.getElementById("selectSides");
 
-    //This updates our roll function to include the new die faces
+    //Swap the number 6 for diceSidesBox.value to only get the correct numbers
     function dieRoll(){
         return Math.floor(Math.random() * diceSidesBox.value) + 1;
     }
@@ -67,7 +67,5 @@ Finally introduce another way to collect input from the user for the how many si
 --- /hint ---
 
 --- /hints ---
-
---- /challenge ---
 
 --- /challenge ---

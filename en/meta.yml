@@ -11,8 +11,7 @@ steps:
   - title: Roll one die
   - title: Make the die faces look authentic
   - title: Roll two Dice
-  - title: "Challenge: roll n dice"
-    challenge: true
+  - title: Roll n dice
   - title: Select individual dice
   - title: Reroll the unselected dice
   - title: "Challenge: more than 6 sides"
