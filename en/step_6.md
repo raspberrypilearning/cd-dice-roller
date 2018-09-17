@@ -58,3 +58,5 @@ All that's left to do in this step is to toggle the CSS class you created, calle
 --- /task ---
 
 Now if you click on a die it's background should be coloured yellow like below!
+
+![Image of the project at the end of this step](images/step6Image.png)

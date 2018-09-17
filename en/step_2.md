@@ -117,3 +117,5 @@ Here you have set the text `color` to white and the `fontSize` to 150 pixels (th
 --- /task ---
 
 You now have a working dice simulator. Click the button and you should see something like below. Lets see if you can make it look better in the next step. We will examine the two white boxes with Liar's dice and Yahtzee later.
+
+![Image of the project at the end of this step](images/step2Image.png)

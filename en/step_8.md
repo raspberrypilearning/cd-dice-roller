@@ -69,3 +69,5 @@ Finally, introduce another way to collect input from the user to query how many 
 --- /hints ---
 
 --- /challenge ---
+
+![Image of the project at the end of this challenge](images/step8Image.png)

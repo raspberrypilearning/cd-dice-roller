@@ -80,3 +80,5 @@ Your for loop will need to run once for each die, so you'll need to get the numb
 ```
 
 --- /task ---
+
+![Image of the project at the end of this step](images/step4Image.png)

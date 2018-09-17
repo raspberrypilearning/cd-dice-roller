@@ -56,3 +56,5 @@ Next you must use a `for` loop to check if every die is selected or not. Your fo
 --- /task ---
 
 Now you should be able to select some dice and if you click the new button it should save the selected dice and reroll the others. Below I select my sixes from the first roll and reroll the others to try and get some more!
+
+![Image of the project at the end of this step](images/step7Image_1.png) ![Image of the project at the end of this step](images/step7Image_2.png)
