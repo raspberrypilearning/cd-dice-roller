@@ -30,8 +30,7 @@ Let's start your function `reRollUnselected()` by gathering all the dice that ha
     }
 ```
 
-This will save **all** our dice in one variable. This variable is like a list. A list is...
-<!-- Mention similar to arrays and explain? Actually returns a HTMLCollection object -->
+This will save **all** our dice in one variable. This variable is an array-like list of HTML elements. This allows us to go through each element with a loop and access that element using your counter variable, usually `i`. 
 
 --- /task ---
 
