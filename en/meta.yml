@@ -14,6 +14,6 @@ steps:
   - title: Roll n dice
   - title: Select individual dice
   - title: Reroll the unselected dice
+  - title: Drop down game instructions 
   - title: "Challenge: more than 6 sides"
     challenge: true
-

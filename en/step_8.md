@@ -1,73 +1,63 @@
---- challenge ---
+## Drop down game instructions
 
-## Challenge: more than 6 sides
+Let's program the large white buttons next.
 
-Some games like Dungeons and Dragons have unique dice that are not cubes. They have more or less than 6 sides. Edit your Dice Roller so the user can select the number of sides your dice will have. (Don't worry about using the dice images, just use the actual numbers like you did at the start of this project.)
+--- task ---
 
-![Dice with 4, 6, 8, 10, 12 and 20 sides](images/diceTypes.jpg)
+If you look at the `index.html` file, you will see two divs for both Liar's dice and Yahtzee. I've already included the `onclick` function but now you're going to fill in the JavaScript. First, store the HTML element that contains the text for Liar's dice in a variable. You can use `getElementById` again here with the id: `liarsText`. 
+
+```javascript
+    function toggleLiars(){
+        var text = document.getElementById("liarsText");
+    }
+```
+
+--- /task ---
+
+--- task ---
+
+Now you must use an if condition to check if the text display style is `block`. This means that the text is being displayed. If it is, you need to set it to `none` to stop displaying it. If it's not, then set it to `block` so that it is displayed. The white box will expand to fit the text when it is displayed.
+
+```javascript
+    function toggleLiars(){
+        var text = document.getElementById("liarsText");
+        if(text.style.display === "block"){
+            text.style.display = "none";
+        }
+        else{
+            text.style.display = "block";
+        }
+    }
+```
+
+--- /task ---
+
+--- task ---
+
+Now try to program the second instructions box to do the same thing!
 
 --- hints ---
-
 --- hint ---
 
-To complete this challenge, you'll need to change how you display your dice. Since you don't have images for sides that need to be bigger than 6, just use numbers like we did at the beginning of this project. If you put them inside a `div` element it will make it easier to keep your reroll function working! Go back and look at the **Roll one die** step for help. I've included a CSS class called `.textDice` to help you style the new divs.
+First store the Yahtzee div in a variable.
+
+Then use an `if` condition to check the display style and toggle between `block` and `none`
 
 --- /hint ---
-
 --- hint ---
 
-Create `div` elements instead of images in your `for` loop inside your`rollButton()` function. Use `.innerHTML` instead of an image `src`. If you want to use the `.textDice` style include the line `elem.classList.add('textDice');`.
-
 ```javascript
-    function rollButton() {
-        diceMat.innerHTML = "";
-        var numberOfDice = getNumDice();
-        for (var i = 0; i < numberOfDice; i++) {
-            var rollValue = dieRoll();
-            var elem = document.createElement("div");
-            elem.innerHTML = (rollValue);
-            elem.id = "dieNumber" + i;
-            elem.classList.add('textDice');    
-            elem.onclick = function() { toggleDieYellow(this.id); };
-            diceMat.appendChild(elem);
+    function toggleYahtzee(){
+        var text = document.getElementById("yahtzeeText");
+        if(text.style.display === "block"){
+            text.style.display = "none";
         }
-        var clearDiv = document.createElement("div");
-        clearDiv.style.clear="both";
-        diceMat.appendChild(clearDiv);
+        else{
+            text.style.display = "block";
+        }
     }
 ```
-
-The last three lines are used to clear the float property that I introduced in my CSS class `.textDice`. If you are not using it, you might not these!
-
 --- /hint ---
-
---- hint ---
-
-Finally, introduce another way to collect input from the user to query how many sides they would like their dice to have. You could use a select box or another input with the property `type="number"`.
-
-```html
-<div id="controller">
-      Num of Dice: <input type="number" id="selectDice" /> <br>
-      Num of Sides: <input type="number" id="selectSides" /> <br>
-      <button onclick="rollButton()">Roll Dice</button>
-      <button onclick="reRollUnselected()">Roll but Keep Selected Dice</button>
-</div>
-```
-
-```javascript
-    //This gets your new input box
-    var diceSidesBox = document.getElementById("selectSides");
-
-    //Swap the number 6 for diceSidesBox.value to only get the correct numbers
-    function dieRoll(){
-        return Math.floor(Math.random() * diceSidesBox.value) + 1;
-    }
-```
-
---- /hint ---
-
 --- /hints ---
 
---- /challenge ---
-
-![Image of the project at the end of this challenge](images/step8Image.png)
+--- /task ---
