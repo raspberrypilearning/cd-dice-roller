@@ -4,7 +4,7 @@ In this step you'll add toggle functionality to the dice. This will allow you to
 
 --- task ---
 
-Firstly, you are going to add two lines of code when you create your `img` tag in your `rollButton()` function. One to label each picture with an distinct ID and another to add an `onclick` function. The onclick function will allow you to make the computer execute a function everytime you click the image. The onclick function is going to be `toggleDieYellow()` which you'll fill in shortly. You also need to use `this.id` as a **parameter** so that the function will toggle the correct die. A parameter is a variable that is passed into a function so that it can be used there.
+Firstly, you need to add two lines of code when you create your `img` tag in your `rollButton()` function. One to label each picture with an distinct ID and another to add an `onclick` function. 
 
 ```javascript
     for (var i = 0; i < numberOfDice; i++) { 
@@ -22,6 +22,8 @@ Firstly, you are going to add two lines of code when you create your `img` tag i
 
 --- /task ---
 
+The onclick function will allow you to make the computer execute a function everytime you click the image. The onclick function is going to be `toggleDieYellow()` which you'll fill in shortly. You also need to use `this.id` as a **parameter** so that the function will toggle the correct die. A parameter is a variable that is passed into a function so that it can be used there.
+
 --- task ---
 
 To toggle our dice background colours you will need to create a CSS class that we can turn on and off. This class will have just one rule which should set the `background-color`. I used yellow you can choose whatever colour you would like. Be sure to add this code in the `stylesheet.css` file!
@@ -32,13 +34,13 @@ To toggle our dice background colours you will need to create a CSS class that w
   }
 ```
 
-When creating a CSS selector, `.` is used to denote a class and `#` is used for id's.
-
 --- /task ---
+
+When creating a CSS selector, `.` is used to denote a class and `#` is used for id's.
 
 --- task ---
 
-Finally, let's focus on the `toggleDieYellow()` function. In the **function declaration**(The first line of a function), you'll see that unlike your other functions there is something between the **parenthesis**. This is the parameter that you passed into the function at the start of this step! Now you can use the value from `this.id` in a new variable under the alias `dieID`. With this, getting your die element is easy and should look familiar. 
+Finally, let's focus on the `toggleDieYellow()` function. In the **function declaration**(The first line of a function), you'll see that unlike your other functions there is something between the **parenthesis**`()`. This is the parameter that you passed into the function at the start of this step! Now you can use the value from `this.id` in a new variable under the alias `dieID`. With this, getting your die element is easy and should look familiar. 
 
 ```javascript
   function toggleDieYellow(dieID) {
@@ -46,7 +48,13 @@ Finally, let's focus on the `toggleDieYellow()` function. In the **function decl
   }
 ```
 
-All that's left to do in this step is to toggle the CSS class you created, called `selected`. This can done by adding the following line of code!
+--- /task ---
+
+All that's left to do in this step is to toggle the CSS class you created, called `selected`.
+
+--- task ---
+
+ This can done by adding the following line of code!
 
 ```javascript
   function toggleDieYellow(dieID) {

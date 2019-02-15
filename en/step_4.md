@@ -13,15 +13,17 @@ Go to your `index.html` file and add the following inside the `div` with the id 
     </select>
 ```
 
+--- /task ---
+
 You should see a select box appear beside the button. This has two options, 1 or 2, which the user can now use to select the amount of dice they would like to roll. Take note of the `id`, we will need this next!
 
 ![Image of the select box next to the button](images/selectBox.png)
 
---- /task ---
+Next you need to get the number of dice they picked from the select box. Similar to how you put your dice mat in a variable at the beginning, you will do the same here using the select ID. 
 
 --- task ---
 
-Next you need to get the number of dice they picked from the select box. Similar to how you put your dice mat in a variable at the beginning, you will do the same here using the select ID. Add the following to the top of your JavaScript code:
+Add the following to the top of your JavaScript code:
 
 ```javascript
     var diceNumberBox = document.getElementById("selectDice");
@@ -39,11 +41,9 @@ Next it's time to fill in your `getNumDice()` function. Add in this code:
     }
 ```
 
-Now you can use `getNumDice()` at any time to get the value of the box. If you'd like to test it, try use the alert function (that we used earlier) inside your button's function: `alert(getNumDice());`
-
 --- /task ---
 
---- task ---
+Now you can use `getNumDice()` at any time to get the value of the box. If you'd like to test it, try use the alert function (that we used earlier) inside your button's function: `alert(getNumDice());`
 
 The final step to rolling two dice requires you to learn a little about `for` loops.
 
@@ -63,6 +63,8 @@ Loops are very useful if you need to run the same code over and over with a diff
 The first part, `var i = 0` creates a **counting variable** and starts it at 0. Next you must include a **condition**, `i < 10`  indicates that the loop will continue to repeat the code while i is less than 10. Lastly you include a statement, **the increment**, that will execute after each time the code runs. `i++` means i will increase by 1 each time the code runs. So this code will run 10 times.
 
 --- /collapse ---
+
+--- task ---
 
 Your for loop will need to run once for each die, so you'll need to get the number of dice the user wants to throw. You can use your function `getNumDice()` for this! Now you can create your for loop by moving some of our previous code inside the loop's curly braces.
 

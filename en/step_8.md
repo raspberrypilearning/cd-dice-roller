@@ -2,9 +2,11 @@
 
 Let's program the large white buttons next.
 
+If you look at the `index.html` file, you will see two divs for both Liar's dice and Yahtzee. I've already included the `onclick` function but now you're going to fill in the JavaScript.
+
 --- task ---
 
-If you look at the `index.html` file, you will see two divs for both Liar's dice and Yahtzee. I've already included the `onclick` function but now you're going to fill in the JavaScript. First, store the HTML element that contains the text for Liar's dice in a variable. You can use `getElementById` again here with the id: `liarsText`. 
+First, store the HTML element that contains the text for Liar's dice in a variable. You can use `getElementById` again here with the id: `liarsText`. 
 
 ```javascript
     function toggleLiars(){
