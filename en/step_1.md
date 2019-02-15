@@ -21,7 +21,7 @@ title: What you will need
 + A computer capable of running a modern web browser.
 
 ### Software
-+ This project can be completed in a web browser using trinket.io
++ This project can be completed online in a web browser using trinket.io
 
 ### Additional resources
 + The images used for the faces of the dice can be found [here](https://github.com/raspberrypilearning/cd-dice-roller/tree/draft/en/images){:target="_blank"}
@@ -32,10 +32,9 @@ title: What you will need
 ---
 title: What you will learn
 ---
-
-This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum){:target="_blank"}:
-
-+ [Use basic programming constructs to create simple programs](https://www.raspberrypi.org/curriculum/programming/creator){:target="_blank"}
++ How to use functions in JavaScript
++ How to use concatenation in JavaScript
++ How to use for loops in JavaScript
 
 --- /collapse ---
 
@@ -43,7 +42,7 @@ This project covers elements from the following strands of the [Raspberry Pi Dig
 
 ### Additional information for educators
 
-If you need to print this project, please use the [printer-friendly version](https://projects.raspberrypi.org/en/projects/project-name/print){:target="_blank"}.
+If you need to print this project, please use the [printer-friendly version](https://projects.raspberrypi.org/en/projects/cd-dice-roller/print){:target="_blank"}.
 
 Use the link in the footer to access the GitHub repository for this project, which contains all resources (including an example finished project) in the 'en/resources' folder.
 

@@ -46,9 +46,11 @@ If you want to create an account on trinket, follow the steps below. This will a
 
 Now we're ready to begin coding!
 
+In this project, I've supplied you with most of the HTML and CSS. You'll mostly be working on the JavaScript code. This can be found in the JavaScript file `myScript.js` located just above the code on your screen. Before you roll a die, you'll need to get access to the HTML `div` with the id `diceMat`. This is so you have somewhere to put the result of your roll on screen. 
+
 --- task ---
 
-In this project, I've supplied you with most of the HTML and CSS. You'll mostly be working on the JavaScript code. This can be found in the JavaScript file `myScript.js` located just above the code on your screen. Before you roll a die, you'll need to get access to the HTML `div` with the id `diceMat`. This is so you have somewhere to put the result of your roll on screen. Put the following line at the very top of your JavaScript code.
+Put the following line at the very top of your JavaScript code.
 
 ```javascript
     var diceMat = document.getElementById("diceMat");
@@ -60,9 +62,11 @@ This line of code will search our HTML `document` and look for the `element` wit
 
 --- /task ---
 
+Next you need a `function` that will simulate a die roll. I have provided the function `dieRoll()` but I have left it blank so that you can fill it in. 
+
 --- task ---
 
-Next you need a `function` that will simulate a die roll. I have provided the function `dieRoll()` but I have left it blank so that you can fill it in.
+Fill in the `dieRoll()` function with the following code.
 
 ```javascript
     function dieRoll(){
@@ -70,17 +74,17 @@ Next you need a `function` that will simulate a die roll. I have provided the fu
     }
 ```
 
+--- /task ---
+
 There is a lot going on here, let's examine it further. 
 
 [[[generic-javascript-create-a-function]]]
 
 The `return` keyword in a function sends the value to the right of `return` back to the point where the function was called. In this case, it is the code to get a random number between 1 and 6; i.e., the numbers on the faces of dice. `Math.random()` returns a random decimal number between 0 and 1 (inclusive of 0, but not 1). `Math.floor()` will round down the decimal number that is inside the `()`.
 
---- /task ---
-
 --- task ---
 
-To test your code, lets get that `Roll Dice` button to do something! If you click on the file called `index.html` above your code and look for the following line:
+To test your code, lets get that `Roll Dice` button to do something! Click on the file called `index.html` above your code and look for the following line:
 
 ```html
     <button onclick="rollButton()">Roll Dice</button>
@@ -98,9 +102,11 @@ Now try and click on the button. You should get a pop up that tells you the valu
 
 --- /task ---
 
+Now we know our `dieRoll()` function works, let's get the result to appear on the dice mat (black rounded rectangle on screen). 
+
 --- task ---
 
-Now we know our `dieRoll()` function works, let's get the result to appear on the dice mat (black rounded rectangle on screen). To do this let's rewrite your `rollButton()` function. Remember that you have your dice Mat stored in the variable `diceMat`!
+To do this let's rewrite your `rollButton()` function. Remember that you have your dice Mat stored in the variable `diceMat`!
 
 ```javascript
     function rollButton() {
@@ -112,9 +118,9 @@ Now we know our `dieRoll()` function works, let's get the result to appear on th
     }
 ```
 
-Here you have set the text `color` to white and the `fontSize` to 150 pixels (the little dots that make up our screens). You can change these to whatever you like to personalise your dice mat. Finally you have put the value for the die roll into the `diceMat`'s HTML so that you can see it. You can remove the alert becuse the pop up does get annoying after a while.
-
 --- /task ---
+
+Here you have set the text `color` to white and the `fontSize` to 150 pixels (the little dots that make up our screens). You can change these to whatever you like to personalise your dice mat. Finally you have put the value for the die roll into the `diceMat`'s HTML so that you can see it. You can remove the alert becuse the pop up does get annoying after a while.
 
 You now have a working dice simulator. Click the button and you should see something like below. Lets see if you can make it look better in the next step. We will examine the two white boxes with Liar's dice and Yahtzee later.
 
