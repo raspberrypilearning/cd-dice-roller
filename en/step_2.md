@@ -4,7 +4,7 @@ First let's get set up on trinket.
 
 --- task ---
 
-Go to the [starter trinket here](https://trinket.io/html/830e255a5c){:target="_blank"}. You'll see a box containing an example website project. On the right-hand side is the website, and on the left-hand side is the code that makes the website. 
+Go to the [starter trinket here](https://trinket.io/html/11c523ad84){:target="_blank"}. You'll see a box containing an example website project. On the right-hand side is the website, and on the left-hand side is the code that makes the website. 
 
 ![Web page and code in trinket](images/starterTrinket.png)
 
