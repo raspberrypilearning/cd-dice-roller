@@ -80,7 +80,7 @@ There is a lot going on here. Let's examine it further!
 
 [[[generic-javascript-create-a-function]]]
 
-The `return` keyword in a function sends the value to the right of `return` back to the point where the function was called. In this case, it is the code to get a random number between 1 and 6; i.e., the numbers on the faces of dice. `Math.random()` returns a random decimal number between 0 and 1 (inclusive of 0, but not 1). `Math.floor()` will round down the decimal number that is inside the `()`.
+The `return` keyword in a function sends the value to the right of `return` back to the point where the function was called. In this case, it is the code to get a random number between 1 and 6, i.e., the numbers on the faces of dice. `Math.random()` returns a random decimal number between 0 and 1 (inclusive of 0, but not 1). `Math.floor()` will round down the decimal number that is inside the `()`.
 
 --- task ---
 
