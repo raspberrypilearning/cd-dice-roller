@@ -1,6 +1,6 @@
 ## Roll one die
 
-First let's get set up on trinket.
+First, let's get set up on Trinket.
 
 --- task ---
 
@@ -13,7 +13,7 @@ Go to the [starter trinket here](https://trinket.io/html/11c523ad84){:target="_b
 title: I have a trinket account
 ---
 
-- Click the **Remix** button at the top right of the project. If you are not signed in, you will be prompted to do so. Once you've signed in, you'll  need to click  **Remix** again. Clicking this button creates a copy of the project for you to work with. 
+- Click the **Remix** button at the top right of the project. If you are not signed in, you will be prompted to do so. Once you've signed in, you'll  need to click **Remix** again. Clicking this button creates a copy of the project for you to work with. 
 
 ![Remix button](images/tktRemixButtonArrow.png)
 
@@ -28,10 +28,10 @@ It should say **remixed** after you click it:
 title: I don't have a trinket account
 ---
 
-You can save your work by using one of the options in the **Share** menu. You will get a link that you can either save somewhere, for example in a document, or send to someone via email.
-**Note:** each time you make a change, you will get a new link.
+You can save your work by using one of the options in the **Share** menu. You will get a link that you can either save somewhere, for example in a document, or send to someone by email.
+**Note:** Each time you make a change, you will get a new link.
 
-If you want to create an account on trinket, follow the steps below. This will allow you to access your work easily from any computer, and to **remix** projects somebody else has shared with you. Remixing means you will save a copy of a project so you can make your own changes to it.
+If you want to create an account on Trinket, follow the steps below. This will allow you to access your work easily from any computer, and to **remix** projects somebody else has shared with you. Remixing means you will save a copy of a project so you can make your own changes to it.
 
 - Go to [the trinket website](http://dojo.soy/trinket) and click **Sign Up For Your Free Account**. You will need an email address to sign up. 
 
@@ -56,13 +56,13 @@ Put the following line at the very top of your JavaScript code.
     var diceMat = document.getElementById("diceMat");
 ```
 
-This line of code will search our HTML `document` and look for the `element` with the id `diceMat`. Then it will store that element in the `variable` called diceMat.
+This line of code will search our HTML `document` and look for the `element` with the id `diceMat`. Then, it will store that element in the `variable` called diceMat.
 
 [[[generic-javascript-create-variable]]]
 
 --- /task ---
 
-Next you need a `function` that will simulate a die roll. I have provided the function `dieRoll()` but I have left it blank so that you can fill it in. 
+Next, you need a `function` that will simulate a die roll. I have provided the function `dieRoll()` but I have left it blank so that you can fill it in. 
 
 --- task ---
 
@@ -76,7 +76,7 @@ Fill in the `dieRoll()` function with the following code.
 
 --- /task ---
 
-There is a lot going on here, let's examine it further. 
+There is a lot going on here. Let's examine it further!
 
 [[[generic-javascript-create-a-function]]]
 
@@ -90,7 +90,7 @@ To test your code, lets get that `Roll Dice` button to do something! Click on th
     <button onclick="rollButton()">Roll Dice</button>
 ```
 
-`rollButton()` is the function that is called when the button is pressed, let's code that function now! Go back the file `myScript.js` and add the following code in the `rollButton()` function:
+`rollButton()` is the function that is called when the button is pressed. Let's code that function now! Go back to the file `myScript.js` and add the following code in the `rollButton()` function:
 
 ```javascript
     function rollButton() {
@@ -98,7 +98,7 @@ To test your code, lets get that `Roll Dice` button to do something! Click on th
     }
 ```
 
-Now try and click on the button. You should get a pop up that tells you the value of your roll. Try it a couple of times and you should see that the number is random.
+Now try and click on the button. You should get a pop-up that tells you the value of your roll. Try it a couple of times and you should see that the number is random.
 
 --- /task ---
 
@@ -106,7 +106,7 @@ Now we know our `dieRoll()` function works, let's get the result to appear on th
 
 --- task ---
 
-To do this let's rewrite your `rollButton()` function. Remember that you have your dice Mat stored in the variable `diceMat`!
+To do this, let's rewrite your `rollButton()` function. Remember that you have your dice mat stored in the variable `diceMat`!
 
 ```javascript
     function rollButton() {
@@ -120,8 +120,8 @@ To do this let's rewrite your `rollButton()` function. Remember that you have yo
 
 --- /task ---
 
-Here you have set the text `color` to white and the `fontSize` to 150 pixels (the little dots that make up our screens). You can change these to whatever you like to personalise your dice mat. Finally you have put the value for the die roll into the `diceMat`'s HTML so that you can see it. You can remove the alert becuse the pop up does get annoying after a while.
+Here you have set the text `color` to white and the `fontSize` to 150 pixels (the little dots that make up our screens). You can change these to whatever you like to personalise your dice mat. Finally, you have put the value for the die roll into the `diceMat`'s HTML so that you can see it. You can remove the alert becuse the pop-up can get annoying after a while.
 
-You now have a working dice simulator. Click the button and you should see something like below. Lets see if you can make it look better in the next step. We will examine the two white boxes with Liar's dice and Yahtzee later.
+You now have a working dice simulator! Click the button and you should see something like below. Lets see if you can make it look better in the next step. We will examine the two white boxes with Liar's dice and Yahtzee later.
 
 ![Image of the project at the end of this step](images/step2Image.png)
