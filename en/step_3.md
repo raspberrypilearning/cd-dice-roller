@@ -6,7 +6,7 @@ First, you need to make sure you have the images. If you're using Trinket, click
 
 --- task ---
 
-Next, you'll add to the `rollButton()` function again. You'll need to create an image element for your die face, set its source to the file names of your images (tile1.png, tile2.png etc) and then add or `append` the image to your dice mat. Use the following lines of code to do that.
+Next, you'll add to the `rollButton()` function again. You'll need to create an image element for your die face, set its source to the file names of your images (tile1.png, tile2.png etc), and then add or `append` the image to your dice mat. You can use the following lines of code to do that.
 
 ```javascript
     var image = document.createElement("img");
