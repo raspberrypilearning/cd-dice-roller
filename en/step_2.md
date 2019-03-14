@@ -33,7 +33,7 @@ You can save your work by using one of the options in the **Share** menu. You wi
 
 If you want to create an account on Trinket, follow the steps below. This will allow you to access your work easily from any computer, and to **remix** projects somebody else has shared with you. Remixing means you will save a copy of a project so you can make your own changes to it.
 
-- Go to [the trinket website](http://dojo.soy/trinket) and click **Sign Up For Your Free Account**. You will need an email address to sign up. 
+- Go to [the Trinket website](http://dojo.soy/trinket) and click **Sign Up For Your Free Account**. You will need an email address to sign up. 
 
 - Enter your email address and choose a password, or ask somebody to do this for you.
 
@@ -122,6 +122,6 @@ To do this, let's rewrite your `rollButton()` function. Remember that you have y
 
 Here you have set the text `color` to white and the `fontSize` to 150 pixels (the little dots that make up our screens). You can change these to whatever you like to personalise your dice mat. Finally, you have put the value for the die roll into the `diceMat`'s HTML so that you can see it. You can remove the alert becuse the pop-up can get annoying after a while.
 
-You now have a working dice simulator! Click the button and you should see something like below. Lets see if you can make it look better in the next step. We will examine the two white boxes with Liar's dice and Yahtzee later.
+You now have a working dice simulator! Click the button and you should see something like below. Let's see if you can make it look better in the next step. We will examine the two white boxes with Liar's dice and Yahtzee later.
 
 ![Image of the project at the end of this step](images/step2Image.png)
