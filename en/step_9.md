@@ -2,7 +2,7 @@
 
 ## Challenge: dice with more than six sides
 
-Some games like Dungeons and Dragons have unique dice that are not cubes. They may have more or less than six sides. Edit your Dice Roller so that the user can select the number of sides the dice will have. (Don't worry about using the dice images, just use the actual numbers like you did at the start of the project.)
+Some games like Dungeons and Dragons have unique dice that are not cubes and may have more or less than six sides. Edit your Dice Roller so that the user can select the number of sides that the dice will have. (Don't worry about using the dice images, just use the actual numbers like you did at the start of the project.)
 
 ![Dice with 4, 6, 8, 10, 12 and 20 sides](images/diceTypes.jpg)
 
