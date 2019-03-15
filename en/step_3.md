@@ -2,7 +2,7 @@
 
 In this step, you're going to use images of real die faces instead of the number.
 
-First, you need to make sure you have the images. If you're using Trinket, click on the image icon that is on the top right-hand side of the code editor. If you remixed the starter trinket, you should see the images called tile1.png, tile2.png etc. The images can also be found [here](https://github.com/raspberrypilearning/cd-dice-roller/tree/draft/en/images).
+First, you need to make sure you have the images. If you're using Trinket, click on the image icon that is on the top right-hand side of the code editor. If you remixed the starter trinket, you should see images called tile1.png, tile2.png etc. The images can also be found [here](https://github.com/raspberrypilearning/cd-dice-roller/tree/draft/en/images).
 
 --- task ---
 
