@@ -122,6 +122,6 @@ To do this, let's rewrite your `rollButton()` function. Remember that you have y
 
 Here you have set the text `color` to white and the `fontSize` to 150 pixels (the little dots that make up our screens). You can change these to whatever you like to personalise your dice mat. Finally, you have put the value for the die roll into the `diceMat`'s HTML so that you can see it. You can remove the alert becuse the pop-up can get annoying after a while.
 
-You now have a working dice simulator! Click the button and you should see something like below. In the next step, we'll make it look even better. We will examine the two white boxes with Liar's dice and Yahtzee later.
+You now have a working dice simulator! Click the button and you should see something like the below. In the next step, we'll make it look even better. We will examine the two white boxes with Liar's dice and Yahtzee later.
 
 ![Image of the project at the end of this step](images/step2Image.png)
