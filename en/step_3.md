@@ -38,7 +38,7 @@ There is an easy fix to this little problem. You just need to reset the diceMat 
 
 --- /task ---
 
-If you are wondering what is causing the yellow colour to appear when you `hover` over the die, have a look at the `stylesheet.css` file and see if you can figure out what is causing it (change the colour too if you like!). 
+If you're wondering what is causing the yellow colour to appear when you `hover` over the die, have a look at the `stylesheet.css` file and see if you can figure out what is causing it (change the colour too if you like!). 
 
 One die is great, but what if we need two dice to play a game like Monopoly? Let's add an option for two dice in the next step! 
 
