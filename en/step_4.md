@@ -43,7 +43,7 @@ Then, fill in your `getNumDice()` function by adding in this code:
 
 --- /task ---
 
-Now you can use `getNumDice()` at any time to get the value of the box. If you'd like to test it, try using the alert function (that we used earlier) inside your button's function: `alert(getNumDice());`
+Now you can use `getNumDice()` at any time to get the value of the box. If you'd like to test it, try using the alert function (which we used earlier) inside your button's function: `alert(getNumDice());`
 
 The final step to rolling two dice requires you to learn a little about `for` loops.
 
