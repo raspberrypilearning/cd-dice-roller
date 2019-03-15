@@ -1,10 +1,10 @@
 ## Select individual dice
 
-In this step, you'll add toggle functionality to the dice. This will allow you to click on a die to change its background colour to yellow (or whatever colour you like). You'll be able to click on it again to put it back to normal. This will be useful for lots of things, one of which we will look at later in the project.
+In this step, you'll add toggle functionality to the dice. This will allow you to click on a die to change its background colour to yellow (or whatever colour you like). You'll be able to click on it again to put it back to how it was. This will be useful for lots of things, one of which we will look at later in the project.
 
 --- task ---
 
-First, you need to add two lines of code when you create your `img` tag in your `rollButton()` function, one to label each picture with an distinct ID, and another to add an `onclick` function. 
+First, you need to add two lines of code when you create your `img` tag in your `rollButton()` function, one to label each picture with a distinct ID, and another to add an `onclick` function. 
 
 ```javascript
     for (var i = 0; i < numberOfDice; i++) { 
@@ -54,7 +54,7 @@ All that's left to do in this step is to toggle the CSS class you created, calle
 
 --- task ---
 
- This can be done by adding the following line of code.
+ This can be done by adding the following line of code:
 
 ```javascript
   function toggleDieYellow(dieID) {
@@ -65,6 +65,6 @@ All that's left to do in this step is to toggle the CSS class you created, calle
 
 --- /task ---
 
-Now if you click on a die, its background should be coloured yellow like in the below!
+Now, if you click on a die, its background should be coloured yellow like in the below!
 
 ![Image of the project at the end of this step](images/step6Image.png)
