@@ -1,8 +1,8 @@
 --- challenge ---
 
-## Challenge: more than 6 sides
+## Challenge: dice with more than six sides
 
-Some games like Dungeons and Dragons have unique dice that are not cubes. They have more or less than 6 sides. Edit your Dice Roller so the user can select the number of sides your dice will have. (Don't worry about using the dice images, just use the actual numbers like you did at the start of this project.)
+Some games like Dungeons and Dragons have unique dice that are not cubes. They may have more or less than six sides. Edit your Dice Roller so that the user can select the number of sides the dice will have. (Don't worry about using the dice images, just use the actual numbers like you did at the start of the project.)
 
 ![Dice with 4, 6, 8, 10, 12 and 20 sides](images/diceTypes.jpg)
 
@@ -10,13 +10,13 @@ Some games like Dungeons and Dragons have unique dice that are not cubes. They h
 
 --- hint ---
 
-To complete this challenge, you'll need to change how you display your dice. Since you don't have images for sides that need to be bigger than 6, just use numbers like we did at the beginning of this project. If you put them inside a `div` element it will make it easier to keep your reroll function working! Go back and look at the **Roll one die** step for help. I've included a CSS class called `.textDice` to help you style the new divs.
+To complete this challenge, you'll need to change how you display your dice. Since you don't have images for sides that need to show numbers greater than 6, just use numbers like we did at the beginning of the project. If you put them inside a `div` element, it will make it easier to keep your reroll function working. Go back and look at the **Roll one die** step for help. A CSS class called `.textDice` is included to help you style the new divs.
 
 --- /hint ---
 
 --- hint ---
 
-Create `div` elements instead of images in your `for` loop inside your`rollButton()` function. Use `.innerHTML` instead of an image `src`. If you want to use the `.textDice` style include the line `elem.classList.add('textDice');`.
+Create `div` elements instead of images in your `for` loop inside your`rollButton()` function. Use `.innerHTML` instead of an image `src`. If you want to use the `.textDice` style, include the line `elem.classList.add('textDice');`.
 
 ```javascript
     function rollButton() {
@@ -37,7 +37,7 @@ Create `div` elements instead of images in your `for` loop inside your`rollButto
     }
 ```
 
-The last three lines are used to clear the float property that I introduced in my CSS class `.textDice`. If you are not using it, you might not these!
+The last three lines are used to clear the float property that was introduced in the CSS class `.textDice`. If you are not using it, you might not need these!
 
 --- /hint ---
 
