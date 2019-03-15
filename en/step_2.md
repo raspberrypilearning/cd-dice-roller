@@ -10,7 +10,7 @@ Go to the [starter trinket here](https://trinket.io/html/11c523ad84){:target="_b
 
 --- collapse ---
 ---
-title: I have a trinket account
+title: I have a Trinket account
 ---
 
 - Click the **Remix** button at the top right of the project. If you are not signed in, you will be prompted to do so. Once you've signed in, you'll  need to click **Remix** again. Clicking this button creates a copy of the project for you to work with. 
@@ -25,7 +25,7 @@ It should say **remixed** after you click it:
 
 --- collapse ---
 ---
-title: I don't have a trinket account
+title: I don't have a Trinket account
 ---
 
 You can save your work by using one of the options in the **Share** menu. You will get a link that you can either save somewhere, for example in a document, or send to someone by email.
@@ -37,7 +37,7 @@ If you want to create an account on Trinket, follow the steps below. This will a
 
 - Enter your email address and choose a password, or ask somebody to do this for you.
 
-- You can now access all your saved or remixed projects by clicking on your username and going to **My Trinkets**.
+- You can now access all of your saved or remixed projects by clicking on your username and going to **My Trinkets**.
 !["My Trinkets" menu item](images/myTrinketsMenu.png)
 
 --- /collapse ---
@@ -46,7 +46,7 @@ If you want to create an account on Trinket, follow the steps below. This will a
 
 Now we're ready to begin coding!
 
-In this project, I've supplied you with most of the HTML and CSS. You'll mostly be working on the JavaScript code. This can be found in the JavaScript file `myScript.js` located just above the code on your screen. Before you roll a die, you'll need to get access to the HTML `div` with the id `diceMat`. This is so you have somewhere to put the result of your roll on screen. 
+For this project, most of the HTML and CSS has already been provided. You'll mostly be working on the JavaScript code. This can be found in the JavaScript file `myScript.js` located just above the code on your screen. Before you roll a die, you'll need to get access to the HTML `div` with the id `diceMat`. This is so you have somewhere to put the result of your roll on screen. 
 
 --- task ---
 
@@ -62,7 +62,7 @@ This line of code will search our HTML `document` and look for the `element` wit
 
 --- /task ---
 
-Next, you need a `function` that will simulate a die roll. I have provided the function `dieRoll()` but I have left it blank so that you can fill it in. 
+Next, you need a `function` that will simulate a die roll. The function `dieRoll()` is already in the code, but it has been left blank so that you can fill it in. 
 
 --- task ---
 
@@ -76,7 +76,7 @@ Fill in the `dieRoll()` function with the following code.
 
 --- /task ---
 
-There is a lot going on here. Let's examine it further!
+There's a lot going on here. Let's examine it further!
 
 [[[generic-javascript-create-a-function]]]
 
@@ -84,7 +84,7 @@ The `return` keyword in a function sends the value to the right of `return` back
 
 --- task ---
 
-To test your code, lets get that `Roll Dice` button to do something! Click on the file called `index.html` above your code and look for the following line:
+To test your code, let's get that `Roll Dice` button to do something! Click on the file called `index.html` above your code and look for the following line:
 
 ```html
     <button onclick="rollButton()">Roll Dice</button>
@@ -122,6 +122,6 @@ To do this, let's rewrite your `rollButton()` function. Remember that you have y
 
 Here you have set the text `color` to white and the `fontSize` to 150 pixels (the little dots that make up our screens). You can change these to whatever you like to personalise your dice mat. Finally, you have put the value for the die roll into the `diceMat`'s HTML so that you can see it. You can remove the alert becuse the pop-up can get annoying after a while.
 
-You now have a working dice simulator! Click the button and you should see something like below. Let's see if you can make it look better in the next step. We will examine the two white boxes with Liar's dice and Yahtzee later.
+You now have a working dice simulator! Click the button and you should see something like below. In the next step, we'll make it look even better. We will examine the two white boxes with Liar's dice and Yahtzee later.
 
 ![Image of the project at the end of this step](images/step2Image.png)
