@@ -43,7 +43,7 @@ Now try to program the second instructions box to do the same thing!
 
 First, store the Yahtzee `div` in a variable.
 
-Then use an `if` condition to check the display style and toggle between `block` and `none`.
+Then, use an `if` condition to check the display style and toggle between `block` and `none`.
 
 --- /hint ---
 --- hint ---
