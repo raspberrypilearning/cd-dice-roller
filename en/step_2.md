@@ -31,7 +31,7 @@ title: I don't have a Trinket account
 You can save your work by using one of the options in the **Share** menu. You will get a link that you can either save somewhere, for example in a document, or send to someone by email.
 **Note:** Each time you make a change, you will get a new link.
 
-If you want to create an account on Trinket, follow the steps below. This will allow you to access your work easily from any computer, and to **remix** projects somebody else has shared with you. Remixing means you will save a copy of a project so you can make your own changes to it.
+If you want to create an account on Trinket, follow the steps below. This will allow you to access your work easily from any computer, and to **remix** projects somebody else has shared with you. Remixing means you will save a copy of a project so that you can make your own changes to it.
 
 - Go to [the Trinket website](http://dojo.soy/trinket) and click **Sign Up For Your Free Account**. You will need an email address to sign up. 
 
@@ -44,9 +44,9 @@ If you want to create an account on Trinket, follow the steps below. This will a
 
 --- /task ---
 
-Now we're ready to begin coding!
+Now we're ready to start coding!
 
-For this project, most of the HTML and CSS has already been provided. You'll mostly be working on the JavaScript code. This can be found in the JavaScript file `myScript.js` located just above the code on your screen. Before you roll a die, you'll need to get access to the HTML `div` with the id `diceMat`. This is so you have somewhere to put the result of your roll on screen. 
+For this project, most of the HTML and CSS has already been provided. You'll mostly be working on the JavaScript code. This can be found in the JavaScript file `myScript.js` located just above the code on your screen. Before you roll a die, you'll need to get access to the HTML `div` with the id `diceMat`. This is so that you have somewhere to put the result of your roll on screen. 
 
 --- task ---
 
