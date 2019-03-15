@@ -11,7 +11,7 @@ steps:
   - title: Roll one die
   - title: Make the die faces look authentic
   - title: Roll two dice
-  - title: Roll n dice
+  - title: Roll *n* dice
   - title: Select individual dice
   - title: Reroll the unselected dice
   - title: Drop-down game instructions 
