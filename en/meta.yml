@@ -1,6 +1,6 @@
 title: Dice Roller
 hero_image: images/banner.png
-description: Create a webapp to simulate dice rolls
+description: Create a web app to simulate dice rolls
 version: 4
 listed: false
 copyedit: false
@@ -10,10 +10,10 @@ steps:
   - title: Introduction
   - title: Roll one die
   - title: Make the die faces look authentic
-  - title: Roll two Dice
+  - title: Roll two dice
   - title: Roll n dice
   - title: Select individual dice
   - title: Reroll the unselected dice
-  - title: Drop down game instructions 
-  - title: "Challenge: more than 6 sides"
+  - title: Drop-down game instructions 
+  - title: "Challenge: more than six sides"
     challenge: true
