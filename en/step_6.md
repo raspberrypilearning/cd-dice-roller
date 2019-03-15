@@ -26,7 +26,7 @@ The `onclick` function will allow you to make the computer execute a function ev
 
 --- task ---
 
-To toggle our dice background colours, we will need to create a CSS class that we can turn on and off. This class will have just one rule which should set the `background-color`. In the below, we will use yellow, but you can choose whichever colour you would like. Be sure to add this code in the `stylesheet.css` file!
+To toggle our dice background colours, we will need to create a CSS class that we can turn on and off. This class will have just one rule which should set the `background-color`. In the below, we will use yellow, but you can choose whichever colour you like. Be sure to add this code in the `stylesheet.css` file!
 
 ```css
   .selected {
@@ -40,7 +40,7 @@ When creating a CSS selector, `.` is used to denote a class and `#` is used for 
 
 --- task ---
 
-Finally, let's focus on the `toggleDieYellow()` function. In the **function declaration** (the first line of a function), you'll see that unlike your other functions, there is something between the **parenthesis**`()`. This is the parameter that you passed into the function at the start of this step! Now you can use the value from `this.id` in a new variable under the alias `dieID`. With this, getting your die element is easy and should look familiar. 
+Finally, let's focus on the `toggleDieYellow()` function. In the **function declaration** (the first line of a function), you'll see that, unlike your other functions, there is something between the **parenthesis**`()`. This is the parameter that you passed into the function at the start of this step! Now you can use the value from `this.id` in a new variable under the alias `dieID`. With this, getting your die element is easy and should look familiar. 
 
 ```javascript
   function toggleDieYellow(dieID) {
