@@ -56,7 +56,7 @@ Next, you need to use a `for` loop to check if every die is selected or not. You
 
 --- /task ---
 
-Now you should be able to select some dice and if you click the new button, it should save the selected dice and reroll the others. In the below example, the user selects the sixes from the first roll and rerolls the other dice to try to get some more!
+Now you should be able to select some dice, and if you click the new button, it should save the selected dice and reroll the others. In the below example, the user selects the sixes from the first roll and rerolls the other dice to try to get some more!
 
 Select Dice             |  Reroll but keep selected dice
 :-------------------------:|:-------------------------:
