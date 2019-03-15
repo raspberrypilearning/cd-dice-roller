@@ -54,7 +54,7 @@ All that's left to do in this step is to toggle the CSS class you created, calle
 
 --- task ---
 
- This can be done by adding the following line of code!
+ This can be done by adding the following line of code.
 
 ```javascript
   function toggleDieYellow(dieID) {
