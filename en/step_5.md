@@ -29,6 +29,6 @@ Next, you need to edit your `getNumDice()` function. You can use the following c
 
 --- /task ---
 
-That's all for this step! Your `for` loop condition used your `getNumDice()` function, so we don't need to make any changes to your `for` loop.
+That's all for this step! Your `for` loop condition used your `getNumDice()` function, so you don't need to make any changes to your `for` loop.
 
 ![Image of the project at the end of this step](images/step5Image.png)
