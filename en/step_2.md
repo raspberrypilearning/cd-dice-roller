@@ -44,7 +44,7 @@ If you want to create an account on Trinket, follow the steps below. This will a
 
 --- /task ---
 
-Now we're ready to start coding!
+Now you're ready to start coding!
 
 For this project, most of the HTML and CSS has already been provided. You'll mostly be working on the JavaScript code. This can be found in the JavaScript file `myScript.js` located just above the code on your screen. Before you roll a die, you'll need to get access to the HTML `div` with the id `diceMat`. This is so that you have somewhere to put the result of your roll on screen. 
 
@@ -56,7 +56,7 @@ Put the following line at the very top of your JavaScript code.
     var diceMat = document.getElementById("diceMat");
 ```
 
-This line of code will search our HTML `document` and look for the `element` with the id `diceMat`. Then, it will store that element in the `variable` called diceMat.
+This line of code will search your HTML `document` and look for the `element` with the id `diceMat`. Then, it will store that element in the `variable` called diceMat.
 
 [[[generic-javascript-create-variable]]]
 
@@ -102,7 +102,7 @@ Now try and click on the button. You should get a pop-up that tells you the valu
 
 --- /task ---
 
-Now we know our `dieRoll()` function works, let's get the result to appear on the dice mat (black rounded rectangle on screen). 
+Now that we know our `dieRoll()` function works, let's get the result to appear on the dice mat (black rounded rectangle on screen). 
 
 --- task ---
 
