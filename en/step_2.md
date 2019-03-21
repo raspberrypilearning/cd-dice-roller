@@ -1,6 +1,6 @@
 ## Roll one die
 
-First, let's get set up on Trinket.
+First, get set up on Trinket.
 
 --- task ---
 
@@ -13,11 +13,11 @@ Go to the [starter trinket here](https://trinket.io/html/11c523ad84){:target="_b
 title: I have a Trinket account
 ---
 
-- Click the **Remix** button at the top right of the project. If you are not signed in, you will be prompted to do so. Once you've signed in, you'll  need to click **Remix** again. Clicking this button creates a copy of the project for you to work with. 
+- Click on the **Remix** button at the top right of the project. If you are not signed in, you will be prompted to do so. Once you are signed in, click on **Remix** again to create a copy of the project you can work with. 
 
 ![Remix button](images/tktRemixButtonArrow.png)
 
-It should say **remixed** after you click it:
+The button should say **remixed** after you click it:
 
 ![Button now says "remixed"](images/tktRemixedSmall.png)
 
@@ -28,16 +28,17 @@ It should say **remixed** after you click it:
 title: I don't have a Trinket account
 ---
 
-You can save your work by using one of the options in the **Share** menu. You will get a link that you can either save somewhere, for example in a document, or send to someone by email.
-**Note:** Each time you make a change, you will get a new link.
+To save your work, click on the **Share** menu icon, and then click on **Link**. This creates a link you can copy and paste into a document, or send to someone by email.
 
-If you want to create an account on Trinket, follow the steps below. This will allow you to access your work easily from any computer, and to **remix** projects somebody else has shared with you. Remixing means that you will save a copy of a project so that you can make your own changes to it.
+**Note:** each time you make a change to your code, you get a new link.
 
-- Go to [the Trinket website](http://dojo.soy/trinket) and click **Sign Up For Your Free Account**. You will need an email address to sign up. 
+If you want to create a free account on Trinket, follow the steps below. On a Trinket account, you can access your work easily from any computer, and you can also **remix** projects somebody else has shared with you. Remixing means that you save a copy of a project to make your own changes to it.
+
+- Go to [the Trinket website](http://dojo.soy/trinket) and click on **Sign Up For Your Free Account**. You need an email address to sign up. 
 
 - Enter your email address and choose a password, or ask somebody to do this for you.
 
-- You can now access all of your saved or remixed projects by clicking on your username and going to **My Trinkets**.
+- Click on your username and then click on **My Trinkets** to access all of your saved or remixed projects.
 !["My Trinkets" menu item](images/myTrinketsMenu.png)
 
 --- /collapse ---
@@ -46,23 +47,25 @@ If you want to create an account on Trinket, follow the steps below. This will a
 
 Now you're ready to start coding!
 
-For this project, most of the HTML and CSS has already been provided. You'll mostly be working on the JavaScript code. This can be found in the JavaScript file `myScript.js` located just above the code on your screen. Before you roll a die, you'll need to get access to the HTML `div` with the id `diceMat`. This is so that you have somewhere to put the result of your roll on screen. 
+The starter trinket includes most of the HTML and CSS code already. You'll mainly work on the JavaScript code. Click on the `myScript.js` file name above the code window to access the JavaScript file.
+
+Before you roll a die, you need to create a place to display the result of the roll. The place for the result is the HTML `div` with the id `diceMat`.
 
 --- task ---
 
-Put the following line at the very top of your JavaScript code.
+Put the following line of code at the very top of your JavaScript file.
 
 ```javascript
     var diceMat = document.getElementById("diceMat");
 ```
 
-This line of code will search your HTML `document` and look for the `element` with the id `diceMat`. Then, it will store that element in the `variable` called diceMat.
+This code searches your HTML `document` for the `element` with the identifier `diceMat`. The code stores that element in the variable called `diceMat`.
 
 [[[generic-javascript-create-variable]]]
 
 --- /task ---
 
-Next, you need a `function` that will simulate a die roll. The function `dieRoll()` is already in the code, but it has been left blank so that you can fill it in. 
+Next, create a function that simulates a die roll. An empty function called `dieRoll()` is already in the code.
 
 --- task ---
 
@@ -76,21 +79,31 @@ Fill in the `dieRoll()` function with the following code.
 
 --- /task ---
 
-There's a lot going on here. Let's examine it further!
+You can click on the following button to read about how to create a JavaScript function.
 
 [[[generic-javascript-create-a-function]]]
 
-The `return` keyword in a function sends the value to the right of `return` back to the point where the function was called. In this case, it is the code to get a random number between 1 and 6, i.e., the numbers on the faces of dice. `Math.random()` returns a random decimal number between 0 and 1 (inclusive of 0, but not 1). `Math.floor()` will round down the decimal number that is inside the `()`.
+This is what the function does:
+
++ The `return` keyword sends the value to its right back to the point where the function was called
++ `Math.floor(Math.random() * 6) + 1` is the code to get a random number between 1 and 6:
+  + `Math.random()` returns a random decimal number between 0 and 1 (inclusive of 0, but not 1)
+  + `Math.floor()` rounds down the decimal number that is inside the `()`
+  + `1` is added so that the result is never `0` (rolling a die will never give you a `0`)
 
 --- task ---
 
-To test your code, let's get that `Roll Dice` button to do something! Click on the file called `index.html` above your code and look for the following line:
+To test this function, you need to get the **Roll Dice** button to do something!
+
+Click on the file name `index.html` above the code window and look for the following line:
 
 ```html
     <button onclick="rollButton()">Roll Dice</button>
 ```
 
-`rollButton()` is the function that is called when the button is pressed. Let's code that function now! Go back to the file `myScript.js` and add the following code in the `rollButton()` function:
+`rollButton()` is the function that is called when you click the button. Write that function now!
+
+Go back to the file `myScript.js` and add the following code **inside** the `rollButton()` function:
 
 ```javascript
     function rollButton() {
@@ -98,15 +111,15 @@ To test your code, let's get that `Roll Dice` button to do something! Click on t
     }
 ```
 
-Now try and click on the button. You should get a pop-up that tells you the value of your roll. Try it a couple of times and you should see that the number is random.
+Now click on the button. You should get a pop-up that displays the value of the roll. Click the button a few more times. You should see that the result is random.
 
 --- /task ---
 
-Now that we know our `dieRoll()` function works, let's get the result to appear on the dice mat (black rounded rectangle on screen). 
+Now that you know the `dieRoll()` function works, you can make the result appear on the dice mat (the black rounded rectangle). 
 
 --- task ---
 
-To do this, let's rewrite your `rollButton()` function. Remember that you have your dice mat stored in the variable `diceMat`!
+To do this, rewrite your `rollButton()` function. Remember that the variable `diceMat` stores your dice!
 
 ```javascript
     function rollButton() {
@@ -120,8 +133,10 @@ To do this, let's rewrite your `rollButton()` function. Remember that you have y
 
 --- /task ---
 
-Here you have set the text `color` to white and the `fontSize` to 150 pixels (the little dots that make up our screens). You can change these to whatever you like to personalise your dice mat. Finally, you have put the value for the die roll into the `diceMat`'s HTML so that you can see it. You can remove the alert becuse the pop-up can get annoying after a while.
+This code sets the text `color` to white and the `fontSize` to 150 pixels (the little dots that make up images on computer screens). If you want to, you can change the look of the dice mat by changing `color` and `fontSize`. Finally, the code also displays value for the die roll in the `diceMat`'s HTML element. If you want to, you can remove the `alert` line.
 
-You now have a working dice simulator! Click the button and you should see something like the below. In the next step, we'll make it look even better. We will examine the two white boxes with Liar's dice and Yahtzee later.
+You now have a working dice simulator! When you click the **Roll Dice** button, you should see something that looks like this: 
 
 ![Image of the project at the end of this step](images/step2Image.png)
+
+In the next step, you will make your simulator look even better. Later, you will also examine the **Liar's Dice** and **Yahtzee** boxes.
