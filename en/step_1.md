@@ -1,6 +1,6 @@
 ## Introduction
 
-Create a dice roll simulator using JavaScript that you can use instead of real dice in a variety of games, including Monopoly, Yahtzee, or Liar's dice.
+Create an online dice roll simulator with JavaScript code that you can use instead in games such as Monopoly, Yahtzee, or Liar's Dice.
 
 ### What you will make
 
@@ -10,7 +10,7 @@ You will build a web app like the one in the trinket below.
   <iframe src="https://trinket.io/embed/html/568648e665?outputOnly=true&amp;start=result" width="600" height="505" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen=""></iframe>
 </div>
 
-To use the dice simulator, select the number of dice you wish to roll using the drop-down `select` button. Then click 'Roll Dice'. If you want to keep some dice from your roll and roll the other ones again, click the dice you wish to keep and they will turn yellow. You can then click 'Roll but Keep Selected Dice'. Click on 'Liars Dice' or 'Yahtzee' to learn more about these games.
+To use the simulator, click on the drop-down menu and select the number of dice you want to roll. Then click on **Roll Dice**. To keep some dice and roll the other ones again, click on the dice you want to keep so they turn yellow. Then click **Roll but Keep Selected Dice**. Click on **Liars Dice** or **Yahtzee** to learn the rules of these games.
 
 --- collapse ---
 ---
@@ -24,7 +24,7 @@ title: What you will need
 + This project can be completed online in a web browser using trinket.io
 
 ### Additional resources
-+ The images used for the faces of the dice can be found [here](https://github.com/raspberrypilearning/cd-dice-roller/tree/draft/en/images){:target="_blank"}
++ [Find the images for the faces of the dice here](https://github.com/raspberrypilearning/cd-dice-roller/tree/draft/en/images){:target="_blank"}
 
 --- /collapse ---
 
