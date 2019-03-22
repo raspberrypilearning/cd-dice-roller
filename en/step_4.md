@@ -1,10 +1,10 @@
 ## Roll two dice
 
-To get the option to roll two dice, you'll need something to allow the user to choose if they want one or two dice. 
+To create an option to roll two dice, you need to allow the user to choose if they want one or two dice. 
 
 --- task ---
 
-Go to your `index.html` file and add the following inside the `div` with the id `controller`.
+Go to your `index.html` file and find the `div` with the id `controller`. Add the following code inside this `div`.
 
 ```html
     <select id="selectDice">
@@ -13,17 +13,19 @@ Go to your `index.html` file and add the following inside the `div` with the id 
     </select>
 ```
 
+Note that this element has the id `selectDice`. Remember this id, as you are going to use it to write the next bit of code.
+
 --- /task ---
 
-You should see a select box appear beside the button. This has two options, 1 or 2, which the user can now use to select the amount of dice they would like to roll. Take note of the `id` — we will need this next!
+A `select` drop-down menu should appear beside the button. The menu should have two options: 1 and 2. The user of your simulator can now choose the number of dice to roll.
 
 ![Image of the select box next to the button](images/selectBox.png)
 
-Next, you need to get the number of dice they picked from the select box. Similar to how you put your dice mat in a variable at the beginning, you will do the same here using the select ID. 
+Next, you need to get the number chosen in the `select` drop-down menu. This works in a similar way to how you put your dice mat in a variable. 
 
 --- task ---
 
-Add the following to the top of your JavaScript code:
+Add the following code to the top of your JavaScript file:
 
 ```javascript
     var diceNumberBox = document.getElementById("selectDice");
@@ -33,7 +35,7 @@ Add the following to the top of your JavaScript code:
 
 --- task ---
 
-Then, fill in your `getNumDice()` function by adding in this code:
+Then, fill the `getNumDice()` function with this code:
 
 ```javascript
     function getNumDice() {
@@ -43,16 +45,16 @@ Then, fill in your `getNumDice()` function by adding in this code:
 
 --- /task ---
 
-Now you can use `getNumDice()` at any time to get the value of the box. If you'd like to test it, try using the alert function (which we used earlier) inside your button's function: `alert(getNumDice());`
+Now you can use the `getNumDice()` function to get the number chosen in the drop-down menu. If you want to test the `getNumDice()` function, you can use the `alert` command. Simply add the following line of code inside the `rollButton()` function: `alert(getNumDice());`
 
-The final step to rolling two dice requires you to learn a little about `for` loops.
+Rolling two dice requires you to learn about `for` loops. This is because you need to use the same code for both the first and the second dice.
 
 --- collapse ---
 ---
 title: Javascript `for` loops.
 ---
 
-Loops are very useful if you need to run the same code over and over with a different value. In this step of the project, you will need to use the same code for both the first and the second dice. A `for` loop looks like the following:
+Loops are very useful when you need to repeat the same code over and over, with a different value each time. A `for` loop looks like this:
 
 ```javascript
     for (var i = 0; i < 10; i++) {
@@ -60,13 +62,17 @@ Loops are very useful if you need to run the same code over and over with a diff
     }
 ```
 
-The first part, `var i = 0`, creates a **counting variable** and starts it at 0. Next, you include a **condition**, `i < 10`  , which indicates that the loop will continue to repeat the code while i is less than 10. Lastly, you include a statement, **the increment**, which will execute after every time the code runs. `i++` means i will increase by 1 every time the code runs. Therefore, this code will run 10 times.
+The first part, `var i = 0`, creates a **counting variable** and starts it at `0`. Next, the **condition**, `i < 10`  , indicates that the loop repeats the code for as long as `i` is less than `10`. Lastly, the **increment** statement runs **after** every time the code is repeated. `i++` means that `i` increases by `1` every time.
+
+Therefore, this `for` loop repeats the code inside it 10 times.
 
 --- /collapse ---
 
+Your `for` loop has to run once for each die roll. This means you need the number chosen in the `select` drop-down menu. The function `getNumDice()` gives you that number.
+
 --- task ---
 
-Your `for` loop will need to run once for each die, so you'll need to get the number of dice the user wants to throw. You can use your function `getNumDice()` for this. Now you can create your `for` loop by moving some of our previous code inside the loop's curly braces.
+Create your `for` loop by moving some of the existing code inside the loop's curly braces `{}`.
 
 ```javascript
     function rollButton() {
