@@ -1,12 +1,16 @@
 ## Drop-down game instructions
 
-Let's program the large white buttons next.
+Program the large white buttons next.
 
-If you look at the `index.html` file, you will see two divs for both Liar's dice and Yahtzee. The `onclick` function is already included, but now you're going to fill in the JavaScript.
+In the `index.html` file, there are `divs`, for Liar's Dice and Yahtzee. Each `div` includes an `onclick` function.
+
+The HTML element with the id `liarsText` contains the text for Liar's Dice.
+
+You're going to add JavaScript code to show or hide this text.
 
 --- task ---
 
-First, store the HTML element that contains the text for Liar's dice in a variable. You can use `getElementById` again here with the id: `liarsText`. 
+In the JavaScript file, find the `toggleLiars()` function and add code to it: use `getElementById` again to store the HTML element with the id `liarsText` in a variable.
 
 ```javascript
     function toggleLiars(){
@@ -18,7 +22,10 @@ First, store the HTML element that contains the text for Liar's dice in a variab
 
 --- task ---
 
-Now you need to use an `if` condition to check if the text display style is `block`, which would mean that the text is being displayed. If it is, you need to set it to `none` to stop displaying it. If it's not, then set it to `block` so that it is displayed. The white box will expand to fit the text when it is displayed.
+Now use an `if` condition to check if the text display style is `block`. If yes, that means the text is being displayed.
+
++ If the text is diplayed, set the text display style to `none` to stop displaying the text
++ If the text is **not** diplayed, then set the text display style to `block` so that the text is displayed
 
 ```javascript
     function toggleLiars(){
@@ -32,21 +39,25 @@ Now you need to use an `if` condition to check if the text display style is `blo
     }
 ```
 
+The white box will expand to fit the text when it is displayed.
+
 --- /task ---
 
 --- task ---
 
-Now try to program the second instructions box to do the same thing!
+Now add code to show or hide the text for Yahtzee in the same way.
 
 --- hints ---
 --- hint ---
 
 First, store the Yahtzee `div` in a variable.
 
-Then, use an `if` condition to check the display style and toggle between `block` and `none`.
+Then use an `if` condition to check the display style and toggle the style between `block` and `none`.
 
 --- /hint ---
 --- hint ---
+
+The code you need to add is this:
 
 ```javascript
     function toggleYahtzee(){
