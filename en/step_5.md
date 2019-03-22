@@ -1,10 +1,10 @@
 ## Roll *n* dice
 
-You can now play games like Monopoly because you can roll two dice, but some games, like Risk and Yahtzee, require more. Let's change your app so that you can roll any amount of dice — or *n* dice, as a mathematician would say!
+You can now play games such as Monopoly, because you can roll two dice. But some games, such as Risk and Yahtzee, require more dice. So you will change your app so that you can roll any amount of dice — or **n** dice, as a mathematician would say!
 
 --- task ---
 
-First, replace your select box code in the `index.html` file with the following code which creates a `input` box that only allows numbers to be typed in. Keep the same ID though!
+First, go to the `index.html` file, and delete the code for the `select` drop-down menu. Then add code that creates a `input` box which only accepts numbers as typed input. Give this box the id `controller`.
 
 ```html
     <div id="controller">
@@ -19,16 +19,16 @@ First, replace your select box code in the `index.html` file with the following 
 
 --- task ---
 
-Next, you need to edit your `getNumDice()` function. You can use the following code to get the value from the input box.
+Next, edit the `getNumDice()` function so that it returns the value from the `input` box.
 
 ```javascript
     function getNumDice() {
-        return return diceNumberBox.value;
+        return diceNumberBox.value;
     }
 ```
 
 --- /task ---
 
-That's all for this step! Your `for` loop condition used your `getNumDice()` function, so you don't need to make any changes to your `for` loop.
+Your `for` loop condition uses the `getNumDice()` function, so you don't need to make any changes to your `for` loop. That's all for this step!
 
 ![Image of the project at the end of this step](images/step5Image.png)
