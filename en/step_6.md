@@ -1,32 +1,36 @@
 ## Select individual dice
 
-In this step, you'll add toggle functionality to the dice. This will allow you to click on a die to change its background colour to yellow (or whatever colour you like). You'll be able to click on it again to put it back to how it was. This will be useful for lots of things, one of which we will look at later in the project.
+In this step, you'll add **toggle functionality** to the dice. Then you can click on a die to change its background colour, and click on it again to change the colour back. In the next step, you will see one of the many cool things this functionality allows you to do.
 
 --- task ---
 
-First, you need to add two lines of code when you create your `img` tag in your `rollButton()` function, one to label each picture with a distinct ID, and another to add an `onclick` function. 
+First, go to your `rollButton()` function. Find the line of code that sets the image for the die roll. Below this line, add two new lines of code:
+1. The first new line should label each image with a distinct id
+1. The second new line adds an `onclick` function to each image
 
 ```javascript
     for (var i = 0; i < numberOfDice; i++) { 
-    var rollValue = dieRoll();
-    var image = document.createElement("img");
-    image.src = ("tile" + rollValue + ".png");
+      var rollValue = dieRoll();
+      var image = document.createElement("img");
+      image.src = ("tile" + rollValue + ".png");
 
-    //Two new lines below
-    image.id = "dieNumber" + i;
-    image.onclick = function() { toggleDieYellow(this.id); };
+      //Two new lines below
+      image.id = "dieNumber" + i;
+      image.onclick = function() { toggleDieYellow(this.id); };
 
-    diceMat.appendChild(image);
+      diceMat.appendChild(image);
   }
 ```
 
 --- /task ---
 
-The `onclick` function will allow you to make the computer execute a function every time you click the image. The `onclick` function is going to be `toggleDieYellow()`, which you'll fill in shortly. You also need to use `this.id` as a **parameter** so that the function will toggle the correct die. A parameter is a variable that is passed into a function so that it can be used there.
+The `onclick` function runs every time you click on a die face image. As you can see, the `onclick` function is called `toggleDieYellow()`. The `this.id` in the function's parentheses `()` is a **parameter** that tells the function which image to act on. A parameter is a variable that is passed to a function so the function can use it when it runs.
 
 --- task ---
 
-To toggle our dice background colours, we will need to create a CSS class that we can turn on and off. This class will have just one rule which should set the `background-color`. In the below, we will use yellow, but you can choose whichever colour you like. Be sure to add this code in the `stylesheet.css` file!
+You want the `toggleDieYellow()` function to change the images' background colour, so you need to add a CSS class that sets the `background-color`. Below, yellow is used, but you can choose whichever colour you like.
+
+Go to the `stylesheet.css` file and add this code to create a CSS class called `selected`:
 
 ```css
   .selected {
@@ -36,11 +40,15 @@ To toggle our dice background colours, we will need to create a CSS class that w
 
 --- /task ---
 
-When creating a CSS selector, `.` is used to denote a class and `#` is used for id's.
+When you create a CSS selector:
++ `.` denotes a **class**
++ `#` denotes an **id**
 
 --- task ---
 
-Finally, let's focus on the `toggleDieYellow()` function. In the **function declaration** (the first line of a function), you'll see that, unlike your other functions, there is something between the **parenthesis**`()`. This is the parameter that you passed into the function at the start of this step! Now you can use the value from `this.id` in a new variable under the alias `dieID`. With this, getting your die element is easy and should look familiar. 
+Now add code to the `toggleDieYellow()` function. In the first line of the function (the **function declaration**), unlike in the other functions, there is a parameter called `dieID` between the parentheses `()`. This means you can use the value from `this.id` in a new variable with the **new name** `dieID`.
+
+Add code to use `dieID` to get the `die` element:
 
 ```javascript
   function toggleDieYellow(dieID) {
@@ -50,11 +58,11 @@ Finally, let's focus on the `toggleDieYellow()` function. In the **function decl
 
 --- /task ---
 
-All that's left to do in this step is to toggle the CSS class you created, called `selected`.
+Next, you need make the `toggleDieYellow()` function toggle the `selected` CSS class.
 
 --- task ---
 
- This can be done by adding the following line of code:
+Add the following line of code:
 
 ```javascript
   function toggleDieYellow(dieID) {
@@ -65,6 +73,6 @@ All that's left to do in this step is to toggle the CSS class you created, calle
 
 --- /task ---
 
-Now, if you click on a die, its background should be coloured yellow like in the below!
+Click on a die. Its background colour should become yellow!
 
 ![Image of the project at the end of this step](images/step6Image.png)
