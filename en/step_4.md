@@ -68,7 +68,7 @@ Therefore, this `for` loop repeats the code inside it 10 times.
 
 --- /collapse ---
 
-Your `for` loop has to run once for each die roll. This means you need the number chosen in the `select` drop-down menu. The function `getNumDice()` gives you that number.
+Your `for` loop has to run once for each die roll. This means you need the number chosen in the `select` drop-down menu. The function `getNumDice()` gives you that number, add the line `var numberOfDice = getNumDice();` just before your `for` loop.
 
 --- task ---
 
